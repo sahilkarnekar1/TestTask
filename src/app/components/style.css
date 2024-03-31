@@ -1,0 +1,74 @@
+
+        .main{
+            width: 230px;
+            box-shadow: 0 0 4px ;
+            background-color: transparent;
+            margin-left: 15px;
+        }
+        .sub1{
+           text-align: center;
+           padding: 7px;
+        }
+        .im1{
+            height: 380px;
+            
+            
+        }
+        .divider{
+            background-color: transparent;
+            display: flex;
+        
+            
+        }
+        .ellipse{
+            width: 10px;
+            height: 16px;
+            border-bottom-right-radius: 50%;
+            border-top-right-radius: 50%;
+            align-self: center;
+            justify-self: start;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0,0.5) -2px 2px 5px -2px inset;
+        }
+        .linebr{
+            width: 100%;
+            border-top: dashed;
+            align-self: center;
+            justify-self: start;
+            margin-left: 13px;
+            margin-right: 13px;
+        }
+        .ellipse2{
+            width: 10px;
+            height: 16px;
+            background-color: white;
+            border-bottom-left-radius: 50%;
+            border-top-left-radius: 50%;
+            align-self: center;
+            justify-self: start;
+            box-shadow: rgba(0, 0, 0,0.5) 2px 2px 5px -2px inset;
+        }
+        .event-info{
+       text-align: center;
+        width: 100%;
+        position: relative; /* Ensure positioning of 
+        pseudo-elements relative to this */
+        padding-bottom: 10px;
+        overflow: hidden; /* Hide overflowing content */
+
+    }
+    .event-name{
+    font-size: 16px;
+    
+}
+.event-collection{
+    width: 170px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    
+}
+    .dark-mode{
+        background-color: black;
+        color: white;
+    }
