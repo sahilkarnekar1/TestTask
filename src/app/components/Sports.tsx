@@ -30,7 +30,7 @@ const Sports: React.FC = () => {
                 {items.slice(0, visible).map((person, index) => (
                     <div key={person.id} className="relative">
                         <div className="flex flex-col items-center justify-center w-60 h-auto bg-transparent border-solid border-2 border-black shadow-xl p-4">
-                            <Image src={person.imageUrl} alt={person.name} className="w-full h-auto rounded-lg mb-2" />
+                            <img src={person.imageUrl} alt={person.name} className="w-full h-auto rounded-lg mb-2" />
                             <div className="text-center">
                                 <p className="text-xs font-semibold">{person.name}</p>
                             </div>

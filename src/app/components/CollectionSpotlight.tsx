@@ -61,7 +61,7 @@ const CollectionSpotlight: React.FC = () => {
             }`}
           >
             <div className="sub1">
-            <Image src={person.imageUrl} alt="" className="im1"/>
+            <img src={person.imageUrl} alt="" className="im1"/>
          </div>
          <div className="divider">
             <div className="ellipse"></div>

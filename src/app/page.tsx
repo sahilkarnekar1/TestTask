@@ -1,9 +1,9 @@
 'use client'
-import Image from "next/image";
+
 
 import CollectionSpotlight from "./components/CollectionSpotlight";
 import dynamic from 'next/dynamic';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // Dynamically import Sports component
 const Sports = dynamic(() => import('./components/Sports'), { ssr: false });
@@ -15,12 +15,18 @@ export default function Home() {
     setDarkMode(prevMode => !prevMode);
   };
 
-  // Apply dark mode class to the body element when darkMode is true
-  if (darkMode) {
-    document.body.classList.add('dark-mode');
-  } else {
-    document.body.classList.remove('dark-mode');
-  }
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+    // Cleanup function to remove the class when the component unmounts
+    return () => {
+      document.body.classList.remove('dark-mode');
+    };
+  }, [darkMode]); // Run this effect whenever darkMode changes
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       {<button onClick={toggleDarkMode} className="theme-toggle">
